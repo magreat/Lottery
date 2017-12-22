@@ -1,0 +1,2 @@
+# Lottery
+wechat lottery demo
