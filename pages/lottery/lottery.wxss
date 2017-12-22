@@ -1,0 +1,53 @@
+.page{width: 100%;}
+.page view{box-sizing: border-box;}
+.lottery{width: 100%;position: relative;}
+.lotteryBg{width: 100%;position: absolute;left: 0;top: 0;z-index: 1;}
+/* lottery turntable */
+.lotteryUpBg{width: 100%;position: absolute;left: 0;top: 0;z-index: 2;}
+.lotteryTitle{display: block; width: 673rpx;height: 353rpx;margin: 30rpx 0 26rpx 4rpx;}
+.lotteryCaption{display: block;width: 613rpx;height: 119rpx;margin: 0 auto;position: relative;z-index: 2;}
+.turnWrap{width: 623rpx; margin:-40rpx auto 0 auto;position: relative;z-index: 1;display: flex;}
+.turnWrapBg{display: block; width: 623rpx;height: 651rpx;}
+.turnWrapBgNull{width: 623rpx;height: 651rpx;}
+.turnDetail{width:622rpx;height: 622rpx; position: absolute;left: 0;top: 0;}
+/* .turnBtnWrap{width: 622rpx;height: 622rpx;display: flex;align-items: center;justify-content: center;} */
+.turnCon{border-radius: 50%;position: absolute;left: 50%;top: 50%;}
+
+.turnBtnWrap{width: 244rpx;height: 244rpx;position: absolute;left: 50%;top: 50%;margin: -122rpx 0 0 -122rpx;z-index: 3;}
+.turnBtn{width: 244rpx;height: 244rpx;}
+/* golds */
+.goldsWrap{width: 100%;position: absolute;left: 0;top: 0;z-index: 3;display: block;}
+.goldsBg{width: 691rpx;margin: 50rpx 0 0 60rpx;}
+.beginWrap{width: 100%;position: absolute;left: 0;top: 0;}
+/* cueTipsWrap */
+.cueTipsWrap{width: 425rpx;background-color: #CF4A1E;margin: 20rpx auto 0 auto;line-height: 35rpx;font-size: 22rpx;color: #FFFFFF;padding: 0 15rpx;}
+.cue{width: 100%;height: 35rpx;position: relative;overflow: hidden;}
+.cueItem{margin-right: 30rpx;font-size: 22rpx;}
+.cueList{overflow: hidden;position: absolute;left: 0;top: 0;white-space: nowrap;
+  animation-name:thumbsTipsAnimate;
+      animation-duration: 30s;  
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+     animation-fill-mode:forwards; 
+} 
+@keyframes thumbsTipsAnimate{
+  0%{transform:translateX(0%);}
+  20%{transform:translateX(-20%);}
+  40%{transform:translateX(-40%);}
+  60%{transform:translateX(-60%);}
+  80%{transform:translateX(-80%);}
+  100%{transform:translateX(-100%);} 
+}   
+/* btnWrap */
+.btnWrap{width: 560rpx;height: 80rpx;margin: 25rpx auto 0 auto;position: relative;}
+.btnWrap>view{width: 240rpx;height: 80rpx;text-align: center;line-height: 80rpx;font-size: 36rpx;color: #FFFFFF;border-radius: 20rpx;background-color: #FFD104;}
+.myPrize{position: absolute;right: 0;top: 0;}
+
+
+
+
+
+
+
+

@@ -1,0 +1,44 @@
+<view class='page'>
+  <view class='lottery'>
+    <image src='https://img2.youxingku.cn/20171205/1512451099-6387.png'  mode='widthFix' class='lotteryBg'></image>
+    <view class='lotteryUpBg'>
+      <image src='https://img2.youxingku.cn/20171205/1512451285-7232.png' class='lotteryTitle'></image>
+      <image src='https://img2.youxingku.cn/20171205/1512451615-6569.png' class='lotteryCaption'></image>
+      <view class='turnWrap'>
+        <image src='https://img2.youxingku.cn/20171205/1512455083-9151.png' class='turnWrapBg'></image>
+        <view class='turnDetail' style='width:{{canvasWidth}}rpx;height:{{canvasHeight}}rpx;'>
+          <view class='turnCon' style='width:{{canvasWidth-80}}rpx;height:{{canvasHeight-80}}rpx;margin-left:-{{(canvasWidth-80)/2}}rpx;margin-top:-{{(canvasHeight-80)/2}}rpx'>
+             <canvas canvas-id="downCanvas"  style='width:{{canvasWidth-80}}rpx;height:{{canvasHeight-80}}rpx' ></canvas>
+          </view>
+           <view class='turnCon' style='width:{{canvasWidth-80}}rpx;height:{{canvasHeight-80}}rpx;margin-left:-{{(canvasWidth-80)/2}}rpx;margin-top:-{{(canvasHeight-80)/2}}rpx'>
+             <canvas canvas-id='upCanvas'   style='width:{{canvasWidth-80}}rpx;height:{{canvasHeight-80}}rpx'></canvas> 
+          </view> 
+        </view>
+      </view>
+    </view>
+    <view class='goldsWrap'>
+      <image src='https://img2.youxingku.cn/20171205/1512452548-8698.png' mode='widthFix' class='goldsBg'></image>
+      <view class='beginWrap' style='z-index:9999'>
+        <view class='lotteryTitle'></view>
+        <view class='lotteryCaption'></view>
+        <view class='turnWrap'>
+          <view class='turnWrapBgNull'></view>
+          <view class='turnBtnWrap'>
+            <canvas canvas-id='turnBtn' bindtouchstart='roll' style='width:{{turnBtnWidth}}px;height:{{turnBtnHeight}}px'></canvas>
+          </view>
+        </view>
+        <view class='cueTipsWrap'>
+          <view class='cue'>
+            <view class='cueList'>
+              <text class='cueItem' wx:for="{{luckyDog}}" wx:for-item="lucky">{{lucky}}</text>
+            </view> 
+          </view>
+        </view>
+        <view class='btnWrap'>
+          <view class='actRule' bindtap='actRule'>活动规则</view>
+          <view class='myPrize' bindtap='myPrize'>我的奖品</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
